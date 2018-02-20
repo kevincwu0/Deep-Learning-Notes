@@ -1,0 +1,70 @@
+### Machine Learning Overview
+
+1. Basic ML concepts
+- supervised learning, unsupervised learning, reinforcement learning, evaluation methods and more.
+- ML algorithms iteratively learn from data, even if not specifically instructed what to look for in the data
+- TensorFlow - Supervised, Unsupervised, Reinforcement, word embeddings (Word2Vec)
+
+2. Supervised Learning
+- Supervised Learning uses labeled data to predict a label given some features
+- If the label is continuous it's called a regression problem
+- If the label is categorical it's called a classification problem
+- E.g. classification problem
+  - Features: Height and Weights
+  - Label: Gender
+  - Task: Given a person's height and weight predict gender
+- We already know the labels since it's supervised
+- E.g. regression problem
+  - Features: Square footage, rooms
+  - Label: house price
+  - Task: given house's size and number of rooms, predict selling price
+- Supervised Learning - historical data that is already labeled, previous house sales
+- Unsupervised Learning - no label (no "right answer" to fit on)
+- Clustering 
+  - Features: Heights and Weights for breeds of dogs
+  - Label: no label for unsupervised
+  - Task: cluster together the data into similar groups
+  - Data scientists intepret results
+- ML model pretty close to each, what the group labels should be
+- Reinforcement Learning works through trial and error which action yield the greatest reward
+  - Agent - learning/decision maker
+  - Environment - what agent interacts with
+  - actions - what the agent can do
+  - choose actions that maximize some specified reward mechanism, and learn best policy
+- Walk through basic machine learning process
+  - 1. Data Acquistion (Regression problem - house, Classification (dogs and cats)
+  - 2. Data Cleaning (edges, normalize the data, standard scaling, spent on cleaning the model)
+  - 3. Training/Test split (30% on test, 70% training -> depends on how clean)
+  - 4. Train Model -> solely on training model
+  - 5. evaluate model -> don't cheat using test data
+  - 6. Adjust model parameters
+  - 7. Deploy model for new incoming data
+- Unsupervised Learning
+  - No test/training split
+  - All data as training data, evaluation metrics
+  - Don't know correct answer to compare
+- Hold Out Sets
+  - Three groups split
+  - Train, Test, Holdout
+  - Holdout before deploy for Evaluate Model (idea of evaluate model before deploying)
+  - Not allowed to change parameters, we expect to see these 
+- Model Evaluation
+  - Supervised Learning - Classification Evaluation
+    - Accuracy, Recall, and Precision
+    - Accuracy - Correctly Classified divided by total number of samples
+  - Supervised Learning - Regression Eval
+    - MAE (mean absolute error), MSE (means square root error), RMSE
+    - All the measurements of: on average, how far are you from the correct continuous value
+  - Unsupervised Learning - Evaluation
+    - Much hard to evaluate, depends on overall goal of the task
+    - Never had "correct labels" to compare to
+    - Cluster Homogeneity, Rand Index (AutoEncoders)
+    - Hard problem
+  - Reinforcement Learning - Evaluation
+    - Usually more obvious, since the "evaluation" is built into the actual training of the model.
+    - How well the model performs the task its assigned.
+- Review
+  - Machine learning
+  - Types of Machine Learning
+  - Machine Learning Process
+  - Evaluation Metrics
